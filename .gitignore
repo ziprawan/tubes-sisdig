@@ -1,0 +1,4 @@
+.vscode/
+
+# Avoid weird compilation error
+scripts/gen.cpp
