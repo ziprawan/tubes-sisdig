@@ -71,7 +71,7 @@ void shiftData(char data[])
     // Geser semuanya ke kiri sekali
     screen_data[i] <<= 1;
     // Masukin data barunya
-    screen_data[i] |= col_data >> (7 - i);
+    screen_data[i] |= (col_data >> (7 - i)) & 1;
   }
 }
 
